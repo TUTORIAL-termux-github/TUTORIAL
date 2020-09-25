@@ -75,7 +75,7 @@ def dos2():
 
 
 def usage():
-os.system('figlet -f "R3D BULL" -F gay')
+        os.system('figlet R3D BULL')
 	print (''' \033[92m	Gebukin tool. dibuat oleh R3D BULL
 	BAR²
 	Ini untuk gebukin web

@@ -8,7 +8,7 @@
 
 from queue import Queue
 from optparse import OptionParser
-import time,sys,os,socket,threading,logging,urllib.request,random
+import time,sys,socket,threading,logging,urllib.request,random
 
 def user_agent():
 	global uagent
@@ -75,7 +75,6 @@ def dos2():
 
 
 def usage():
-        os.system('figlet R3D BULL')
 	print (''' \033[92m	Gebukin tool. dibuat oleh R3D BULL
 	BAR²
 	Ini untuk gebukin web

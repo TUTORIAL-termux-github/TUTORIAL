@@ -78,7 +78,7 @@ def usage():
 	print (''' \033[92m	Gebukin tool. dibuat oleh R3D BULL
 	BAR²
 	Ini untuk gebukin web
-	ketik : python3 R3D BULL DDOS.py [-s] [-p] [-t]
+	ketik : python3 'R3D BULL DDOS.py' [-s] [-p] [-t]
 	-h : help
 	-s : ip web
 	-p : portnya 80 aja ya :V,atau terserah kalian

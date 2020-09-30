@@ -14,6 +14,6 @@ git clone https://github.com/TUTORIAL-termux-github/TUTORIAL/
 
 cd TUTORIAL
 
-python 'R3D BULL DDOS.py'
+python3 'R3D BULL DDOS.py'
 
 
